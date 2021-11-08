@@ -9,7 +9,3 @@ while montante < objetivo:
     quantidade += 1        
 
 print(f'Vai levar {quantidade} anos para dobrar o valor!')
-        
-        
-        
-
