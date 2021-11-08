@@ -1,14 +1,15 @@
-def quantos_anos(d, j):
-    quantidade = 0
-    while True:
-        d * (j/100) + d <= 2 * d
-        quantidade =+ 1
-    return quantidade
+deposito = float(input('Insira o valor do depósito: '))
+juros = float(input('Insira o valor do juros: '))
+quantidade = 0
+objetivo = 2 * deposito
+montante = 0
+while montante < objetivo:        
+    montante = (deposito * (juros/100)) + deposito
+    deposito = montante
+    quantidade += 1        
 
+print(f'Vai levar {quantidade} anos para dobrar o valor!')
+        
+        
+        
 
-
-
-deposito = int(input())
-juros = int(input())
-anos = quantos_anos(deposito, juros)
-print(anos)
